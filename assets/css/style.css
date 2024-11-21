@@ -1,0 +1,124 @@
+/* Root Variables */
+:root {
+    --main-color: #0A605F;
+    --secondary-color: #411B4E;
+    --highlights-color: #BE2A77;
+    --heading-font-family: "Playfair Display", serif;
+    --default-font-family: "Poppins", sans-serif;
+    --white-color: #fff;
+    --black-color: #000;
+  }
+
+/* Global Styles */
+body {
+    font-family: var(--default-font-family);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+  }
+  
+  main {
+    flex: 1 0 auto;
+  }
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .nav-wrapper {
+    font-family: var(--heading-font-family);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 30px;
+    background-color: var(--black-color);
+    border-bottom: 1px solid var(--highlights-color);
+  }
+  
+  .brand-logo {
+    font-size: 1.75rem;
+    color: var(--white-color);
+    padding: 12px 0;
+  }
+  
+  .nav-wrapper ul {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-wrapper ul li {
+    margin-left: 20px;
+  }
+  
+  .nav-wrapper ul li a {
+    color: var(--white-color);
+    font-size: 16px;
+  }
+  
+  .nav-wrapper ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  
+  /* Mobile Menu */
+  .sidenav-trigger {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .nav-wrapper ul {
+      display: none;
+    }
+  
+    .sidenav-trigger {
+      display: block;
+    }
+  }
+  
+  /* Sidenav Styles */
+  .sidenav {
+    background-color: var(--black-color);
+  }
+  
+  .sidenav-trigger {
+    padding: 12px;
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .sidenav a, .sidenav li > a {
+    color: var(--white-color);
+  }
+  
+  .sidenav a:hover {
+    background-color: #333;
+  }
+
+/* Footer */
+.page-footer {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-top: 1px solid var(--highlights-color);
+    padding: 10px 0;
+    text-align: center;
+  }
