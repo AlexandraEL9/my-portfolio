@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/ac8b4850f2.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+    <!--bespoke css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!--navbar and side navbar-->
+    <!--navbar-->
+    <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Alexandra Lee</span>
+          </a>          
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="fas fa-bars"></i>
+            <!-- sr only learning from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_hlp_sr-only&stacked=h-->
+            <span class="sr-only">Open mobile navigation</span>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="/resume.html">Resume</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li> 
+          </ul>
+        </div>
+      </nav>
+      <!--sidenav-->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/resume.html">resume.html</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    <!--header-->
+    <header>
+        <h1><i class="fa-solid fa-gears"></i> Projects <i class="fa-solid fa-gears"></i></h1>
+        <h2>A selection of some of my recent projects:</h2>
+    </header>
+
+    <!--main container-->
+    <main>
+        <main>
+            <div class="row cards-container">
+              <!-- Project Card 1 -->
+              <div class="col s12 m6 l3">
+                <div class="card card-project sticky-action">
+                  <!--card image and floating button-->
+                  <div class="card-image">
+                    <img src="assets/images/dock9-1.png" alt="Project 1">
+                    <a class="btn-floating halfway-fab">
+                      <i class="material-icons">loop</i>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-content">
+                    <!--title-->
+                    <div class="title-container">
+                      <span class="card-title">
+                        Dock 9 Bar
+                      </span>
+                    </div>
+                    <p>
+                      A responsive portfolio website showcasing my projects, skills, and experience.
+                    </p>
+                  </div>
+                  <!--card buttons-->
+                  <div class="card-action center-align">
+                    <a href="https://github.com/AlexandraEL9/MS1-dock9bar" target="_blank" class="btn">GitHub Repo</a>
+                    <a href="https://alexandrael9.github.io/MS1-dock9bar/index.html" target="_blank" class="btn">Live Demo</a>
+                  </div>
+                  <!--flip side of card displaying skills used-->
+                  <div class="card-reveal center-align">
+                    <span class="card-title grey-text text-darken-4"> Skills & Tools </span>
+                    <p>
+                      HTML, CSS, Bootstrap
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 2 -->
+              <div class="col s12 m6 l3">
+                <div class="card card-project sticky-action">
+                  <!--card image and floating button-->
+                  <div class="card-image">
+                    <img src="assets/images/travel-site-1.png" alt="Project 2">
+                    <a class="btn-floating halfway-fab">
+                      <i class="material-icons">loop</i>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-content">
+                    <!--title-->
+                    <div class="title-container">
+                      <span class="card-title">
+                        Travel Landing Page
+                      </span>
+                    </div>
+                    <p>
+                      A responsive portfolio website showcasing my projects, skills, and experience.
+                    </p>
+                  </div>
+                  <!--card buttons-->
+                  <div class="card-action center-align">
+                    <a href="https://github.com/AlexandraEL9/fe-travel-project" target="_blank" class="btn">GitHub Repo</a>
+                    <a href="https://alexandrael9.github.io/fe-travel-project/" target="_blank" class="btn">Live Demo</a>
+                  </div>
+                  <!--flip side of card displaying skills used-->
+                  <div class="card-reveal center-align">
+                    <span class="card-title grey-text text-darken-4"> Skills & Tools </span>
+                    <p>
+                      HTML, CSS, Bootstrap, flexbox, embeds
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 3 -->
+              <div class="col s12 m6 l3">
+                <div class="card card-project sticky-action">
+                  <!--card image and floating button-->
+                  <div class="card-image">
+                    <img src="assets/images/seize-the-day-1.png" alt="Project 3">
+                    <a class="btn-floating halfway-fab">
+                      <i class="material-icons">loop</i>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-content">
+                    <!--title-->
+                    <div class="title-container">
+                      <span class="card-title">
+                        Seize the Day
+                      </span>
+                    </div>
+                    <p>
+                      A responsive portfolio website showcasing my projects, skills, and experience.
+                    </p>
+                  </div>
+                  <!--card buttons-->
+                  <div class="card-action center-align">
+                    <a href="https://github.com/AlexandraEL9/MS2-seize-the-day" target="_blank" class="btn">GitHub Repo</a>
+                    <a href="https://alexandrael9.github.io/MS2-seize-the-day/" target="_blank" class="btn">Live Demo</a>
+                  </div>
+                  <!--flip side of card displaying skills used-->
+                  <div class="card-reveal center-align">
+                    <span class="card-title grey-text text-darken-4"> Skills & Tools </span>
+                    <p>
+                      HTML, CSS, Bootstrap, JavaScript
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 4 -->
+              <div class="col s12 m6 l3">
+                <div class="card card-project sticky-action">
+                  <!--card image and floating button-->
+                  <div class="card-image">
+                    <img src="assets/images/moca-1.png" alt="Project 4">
+                    <a class="btn-floating halfway-fab">
+                      <i class="material-icons">loop</i>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-content">
+                    <!--title-->
+                    <div class="title-container">
+                      <span class="card-title">
+                        M.O.C.A: My Own Cooking App
+                      </span>
+                    </div>
+                    <p>
+                      A responsive portfolio website showcasing my projects, skills, and experience.
+                    </p>
+                  </div>
+                  <!--card buttons-->
+                  <div class="card-action center-align">
+                    <a href="https://github.com/AlexandraEL9/MOCA-app" target="_blank" class="btn">GitHub Repo</a>
+                    <a href="https://moca-cook-app-970a7ec0db09.herokuapp.com/" target="_blank" class="btn">Live Demo</a>
+                  </div>
+                  <!--flip side of card displaying skills used-->
+                  <div class="card-reveal center-align">
+                    <span class="card-title grey-text text-darken-4"> Skills & Tools </span>
+                    <p>
+                      HTML, CSS, JavaScript, Python, Materialize, PostGres database
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          
+    </main>
+
+    <footer class="page-footer black">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="container"> © 2024 y Portfolio All rights reserved. For educational purposes only. </div>
+          </div>
+        </div>
+    </footer>  
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--bespoke javaScript-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
