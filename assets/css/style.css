@@ -316,6 +316,52 @@ main p {
   text-align: center;
 }
 
+/* Contact Form Styling */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 15px;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+  font-family: var(--heading-font-family);
+  font-size: 46px;
+  color: var(--highlights-color);
+  margin-bottom: 20px;
+}
+
+.contact-form p {
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.contact-form .btn {
+  margin-top: 10px;
+  background-color: #0A605F;
+  columns: var(--white-color);
+}
+
+.contact-form label {
+  font-family: var(--heading-font-family); /* Ensure it matches the overall design */
+  font-size: 18px; /* Increase the font size */
+  font-weight: bold; /* Make the text more prominent */
+  color: var(--highlights-color); /* Use a contrasting color for better visibility */
+  margin-bottom: 8px; /* Add some spacing below the labels */
+  display: block; /* Ensure labels are on their own line */
+}
+
+.contact-form i.fa-envelope-open-text {
+  font-size: 46px; /* Match this to the size of your text */
+  color: var(--highlights-color); /* Optional: Match icon color to the heading */
+  margin-bottom: 20px; /* Optional: Add spacing below the icon */
+  display: block; /* Ensure it aligns properly above the heading */
+  text-align: center; /* Center-align the icon */
+}
+
+
+
 /* Media Queries */
 @media (max-width: 768px) {
   .flex-layout {

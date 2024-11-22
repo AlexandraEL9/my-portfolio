@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/ac8b4850f2.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+    <!--bespoke css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- Navbar and Side Navbar -->
+    <!-- Navbar -->
+    <nav class="black">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Alexandra Lee</span>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Open mobile navigation</span>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Side Navbar -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <!--header-->
+    <header>
+        <h1><i class="fa-solid fa-envelope"></i> Contact Me <i class="fa-solid fa-envelope"></i></h1>
+        <h2>Access to sites and social media:</h2>
+        <h3>
+            <a href="https://github.com/AlexandraEL9" target="_blank"><i class="fa-brands fa-github"></i></a> |
+            <a href="https://www.linkedin.com/in/alexandra-lee-92276b294/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> |
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        </h3>
+    </header>
+
+    <!--main container-->
+    <main>
+        <section class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <!-- Form Heading -->
+                    <div class="col s12 m6 offset-m3">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <h4 class="center-align">Alternatively, you can email directly below:</h4>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="row">
+                    <form class="col s12 m8 offset-m2" action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
+                        <!-- Name Fields -->
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input id="first_name" type="text" name="first-name" class="validate" required>
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="last_name" type="text" name="last-name" class="validate" required>
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <!-- Email Field -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <!-- Message Field -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea" rows="4" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="row">
+                            <div class="col s12">
+                                <button class="btn" type="submit">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>        
+        
+    </main>
+
+    <footer class="page-footer black">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="container"> © 2024 y Portfolio All rights reserved. For educational purposes only. </div>
+          </div>
+        </div>
+    </footer>  
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--bespoke javaScript-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
