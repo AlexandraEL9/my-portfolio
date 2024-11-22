@@ -1,244 +1,236 @@
 /* Root Variables */
 :root {
-    --main-color: #0A605F;
-    --secondary-color: #411B4E;
-    --highlights-color: #f6546a;
-    --heading-font-family: "Playfair Display", serif;
-    --default-font-family: "Poppins", sans-serif;
-    --white-color: #fff;
-    --black-color: #000;
-  }
+  --main-color: #0A605F;
+  --secondary-color: #411B4E;
+  --highlights-color: #f6546a;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --white-color: #fff;
+  --black-color: #000;
+}
 
 /* Global Styles */
 body {
-    font-family: var(--default-font-family);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-  }
-  
-  h1, h2, h3 {
-    font-family: var(--heading-font-family);
-    font-weight: bold;
-  }
-  
-  main {
-    flex: 1 0 auto;
-  }
+  font-family: var(--default-font-family);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+i {
+  color: var(--highlights-color);
+}
 
 /* Navigation Bar */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  .nav-wrapper {
-    font-family: var(--heading-font-family);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
-    padding: 0 30px;
-    background-color: var(--black-color);
-    border-bottom: 1px solid var(--highlights-color);
-  }
-  
-  .brand-logo {
-    font-size: 1.75rem;
-    color: var(--white-color);
-    padding: 12px 0;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  font-family: var(--heading-font-family);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 30px;
+  background-color: var(--black-color);
+  border-bottom: 1px solid var(--highlights-color);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  text-decoration: none;
+  flex-wrap: nowrap;
+}
+
+.nav-wrapper ul {
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+}
+
+.nav-wrapper ul li {
+  margin-left: 20px;
+}
+
+.nav-wrapper ul li a {
+  color: var(--white-color);
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-wrapper ul li a:hover {
+  transform: scale(1.1);
+  color: var(--highlights-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.nav-wrapper ul li.active a {
+  color: var(--highlights-color);
+  font-weight: bold;
+}
+
+/* Mobile Menu */
+.sidenav-trigger {
+  display: none;
+}
+
+@media (max-width: 992px) {
   .nav-wrapper ul {
-    margin-left: auto;
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-wrapper ul li {
-    margin-left: 20px;
-  }
-  
-  .nav-wrapper ul li a {
-    color: var(--white-color);
-    font-size: 16px;
-  }
-  
-  .nav-wrapper ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    padding: 5px;
-  }
-  
-  
-  /* Mobile Menu */
-  .sidenav-trigger {
-    display: none;
+      display: none;
   }
 
-  @media (max-width: 992px) {
-    .nav-wrapper ul {
-      display: none;
-    }
-  
-    .sidenav-trigger {
-      display: block;
-    }
-  }
-  
-  /* Sidenav Styles */
-  .sidenav {
-    background-color: var(--black-color);
-  }
-  
   .sidenav-trigger {
-    padding: 12px;
-    min-width: 48px;
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+      display: block;
   }
-  
-  .sidenav a, .sidenav li > a {
-    color: var(--white-color);
-  }
-  
-  .sidenav a:hover {
-    background-color: #333;
-  }
+}
+
+/* Sidenav Styles */
+.sidenav {
+  background-color: var(--black-color);
+}
+
+.sidenav a, .sidenav li > a {
+  color: var(--white-color);
+}
+
+.sidenav a:hover {
+  background-color: #333;
+}
 
 /* Header */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
       url("../images/code-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 200px 0;
-  }
-  
-  header h1 {
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 1;
-    margin: 30px 0;
-  }
-  
-  header h2 {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1.5;
-    margin: 0;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+  text-align: center;
+  padding: 200px 0;
+}
 
-  header h3 {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 5px;
-    margin: 0;
-  }
+header h1 {
+  color: var(--highlights-color);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
 
-/* Main */
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+/* Main Content */
 main {
   background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
-  color: white;
+  color: var(--white-color);
   text-align: center;
-  padding: 50px 50px; /* Adjust padding for a balanced layout */
+  padding: 50px 50px;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .flex-layout {
-    display: flex;
-    gap: 20px; /* Adds spacing between columns */
-    align-items: center; /* Centers items vertically */
-  }
-  
-  .text-column {
-    flex: 2; /* 2/3 of the space */
-  }
-  
-  .image-column {
-    flex: 1; /* 1/3 of the space */
-  
-  }
-   
-  .responsive-img {
-    max-width: 100%;
-    display: block;
-    border-radius: 20%; /* Change from 50px to 50% for a circular image */
-    border: 5px solid var(--highlights-color); /* Use your highlight color */
-    margin: 20px auto; /* Optional: Adds spacing around the image */    
-  }
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
+.flex-layout {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
-  main h2 {
-    color: #f6546a;
-    font-weight: 700;
-    font-size: 96x;
-    line-height: 1.5;
-    margin: 0;
-  }
+.text-column {
+  flex: 2;
+}
 
-  main h3 {
-    color: #f6546a;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: 5px;
-    margin: 0;
-  }
+.image-column {
+  flex: 1;
+}
 
-  main p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: white;
-  }
+.responsive-img {
+  max-width: 100%;
+  display: block;
+  border-radius: 20%;
+  border: 5px solid var(--highlights-color);
+  margin: 20px auto;
+}
+
+main h2, main h3 {
+  color: var(--highlights-color);
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-color);
+}
 
 /* Footer */
 .page-footer {
-    background-color: var(--main-color);
-    color: var(--white-color);
-    border-top: 1px solid var(--highlights-color);
-    padding: 10px 0;
-    text-align: center;
-  }
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-top: 1px solid var(--highlights-color);
+  padding: 10px 0;
+  text-align: center;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
   .flex-layout {
-    flex-direction: column; /* Stack columns vertically */
-    gap: 10px; /* Reduce the gap between sections */
+      flex-direction: column;
+      gap: 10px;
   }
 
   .text-column, .image-column {
-    flex: none; /* Reset the flex grow/shrink */
-    width: 100%; /* Ensure both columns take full width */
+      flex: none;
+      width: 100%;
   }
 
   .responsive-img {
-    margin: 10px auto; /* Center the image vertically */
+      margin: 10px auto;
   }
 
   main {
-    padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px;
   }
 }

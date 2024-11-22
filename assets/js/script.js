@@ -18,11 +18,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Highlight the active navigation link
+    function highlightActiveNavLink() {
+        // Get the current URL
+        const currentPage = window.location.pathname;
+
+        // Select all navbar links
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        // Loop through links to match URL
+        navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.parentElement.classList.add("active");
+            }
+        });
+    }
+
     // Initialize all functionalities
     function init() {
         initializeMaterializeComponents();
         adjustSidenavMargin();
+        highlightActiveNavLink(); // Add active class logic
     }
 
     init();
 });
+
