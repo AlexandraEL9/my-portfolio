@@ -93,10 +93,45 @@ nav {
   font-weight: bold;
 }
 
-/* Mobile Menu */
-.sidenav-trigger {
-  display: none;
+/* Sidenav Styles */
+.sidenav {
+  background-color: var(--black-color);
 }
+
+.sidenav a {
+  color: var(--white-color);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px; /* Add spacing for better clickability */
+  display: block; /* Ensure links span the full width */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.sidenav a:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: var(--highlights-color); /* Match hover color to main nav */
+  background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.sidenav li.active a {
+  color: var(--highlights-color); /* Highlight active link */
+  font-weight: bold; /* Make it stand out */
+}
+
+/* Ensure consistency with the sidenav-trigger */
+.sidenav-trigger {
+  color: var(--white-color);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.sidenav-trigger:hover {
+  transform: scale(1.1); /* Enlarge trigger icon on hover */
+  color: var(--highlights-color);
+}
+
+
 
 @media (max-width: 992px) {
   .nav-wrapper ul {
