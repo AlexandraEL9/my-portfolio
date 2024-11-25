@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Initialize Materialize components
     function initializeMaterializeComponents() {
+        // Initialize sidenav
         let sidenav = document.querySelectorAll(".sidenav");
         M.Sidenav.init(sidenav);
 
+        // Initialize select elements
         let selects = document.querySelectorAll("select");
         M.FormSelect.init(selects);
+
+        // Initialize collapsible elements
+        let collapsibles = document.querySelectorAll(".collapsible");
+        M.Collapsible.init(collapsibles);
     }
 
     // Adjust sidenav margin based on navbar height
@@ -18,42 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Highlight the active navigation link
+    // Highlight the active navigation link for both sidenav and navbar
     function highlightActiveNavLink() {
         const currentPage = window.location.pathname;
-        const navLinks = document.querySelectorAll("nav ul li a");
+        const navLinks = document.querySelectorAll("nav ul li a, .sidenav li a");
 
         navLinks.forEach((link) => {
-            if (link.getAttribute("href") === currentPage) {
+            // Normalize hrefs to avoid mismatches
+            const linkPath = new URL(link.href).pathname;
+            if (linkPath === currentPage) {
                 link.parentElement.classList.add("active");
             }
         });
     }
-
-    // Toggle card visibility
-	function setupCardActions() {
-		const revealIcons = document.querySelectorAll('.card-image .btn-floating');
-		const closeIcons = document.querySelectorAll('.card-reveal .fa-times-circle');
-
-		revealIcons.forEach((icon) => {
-			icon.addEventListener('click', function() {
-				icon.closest('.card').classList.toggle('active');
-			});
-		});
-
-		closeIcons.forEach((icon) => {
-			icon.addEventListener('click', function() {
-				icon.closest('.card').classList.toggle('active');
-			});
-		});
-	}
 
     // Initialize all functionalities
     function init() {
         initializeMaterializeComponents();
         adjustSidenavMargin();
         highlightActiveNavLink();
-        setupCardActions();
     }
 
     init();

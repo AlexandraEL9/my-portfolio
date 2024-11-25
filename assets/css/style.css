@@ -116,7 +116,7 @@ nav {
 
 .sidenav li.active a {
   color: var(--highlights-color); /* Highlight active link */
-  font-weight: bold; /* Make it stand out */
+  font-weight: bold; 
 }
 
 /* Ensure consistency with the sidenav-trigger */
@@ -130,6 +130,14 @@ nav {
   transform: scale(1.1); /* Enlarge trigger icon on hover */
   color: var(--highlights-color);
 }
+
+.nav-wrapper ul li.active a, .sidenav li.active a {
+  color: var(--highlights-color); /* Same highlight color */
+  font-weight: bold; /* Bold for emphasis */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: subtle background highlight */
+  border-radius: 4px; /* Smooth corners */
+}
+
 
 
 
