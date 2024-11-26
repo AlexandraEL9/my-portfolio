@@ -55,9 +55,13 @@
         <ul class="collapsible">
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">insert_emoticon</i>
-                    <h4 class="text-black">Summary</h4>
+                    <div class="header-left">
+                      <i class="material-icons header-icon">insert_emoticon</i>
+                      <h4 class="header-title">Summary</h4>
+                    </div>
+                    <i class="material-icons chevron">expand_more</i> <!-- Down arrow by default -->
                 </div>
+                  
                 <div class="collapsible-body">
                     <p>
                         Experienced Primary Teacher, eager to leverage teaching experience and transferable skills—critical thinking, attention to detail, adaptability, and commitment to improvement—to excel in a software engineering role. Skilled in team collaboration, problem-solving, and effective communication to achieve optimal outcomes and foster inclusive learning environments. Experienced in strategic planning, mentoring, and innovation as a Subject Leader, driving continuous improvement. Adept at adapting to dynamic situations, building strong relationships, and fostering a collaborative team culture.
@@ -67,8 +71,11 @@
             <!-- Experience Section -->
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">work</i>
-                    <h4 class="text-black">Experience</h4>
+                    <div class="header-left">
+                        <i class="material-icons header-icon">work</i>
+                        <h4 class="header-title">Experience</h4>
+                    </div>
+                    <i class="material-icons chevron">expand_more</i> <!-- Down arrow by default -->
                 </div>
                 <div class="collapsible-body">
             
@@ -199,12 +206,17 @@
             <!-- Education Section -->
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">school</i>Education
+                    <div class="header-left">
+                        <i class="material-icons">school</i>
+                        <h4 class="header-title">Education</h4>
+                    </div>
+                    <i class="material-icons chevron">expand_more</i> 
                 </div>
                 <div class="collapsible-body">
                     <ul>
-                        <li><strong>BSc in Computer Science</strong>, University of Example (2015–2018)</li>
-                        <li><strong>Certifications:</strong> Google UX Design, AWS Certified Developer</li>
+                        <li><strong>Level 5 Diploma in Web Application Development </strong>, East Kent College/ Code Institute (2024–Ongoing)</li>
+                        <li><strong>Post Graduate Certificate in Teaching: Education/ Teaching </strong> Manchester Metropolitan University (2010-2011)</li>
+                        <li><strong>Bachelor of Arts: Humanities: English with Cultural Studies </strong> Manchester Metropolitan University (2003-2006)</li>
                     </ul>
                 </div>
             </li>
@@ -212,26 +224,71 @@
             <!-- Skills Section -->
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">star</i>Skills
+                    <div class="header-left">
+                        <i class="material-icons">build</i>
+                        <h4 class="header-title">Skills</h4>
+                    </div>
+                    <i class="material-icons chevron">expand_more</i>
                 </div>
                 <div class="collapsible-body">
                     <ul>
-                        <li>Proficient in Python, JavaScript, and Django</li>
-                        <li>Experience with Materialize CSS, Bootstrap, and React</li>
-                        <li>Skilled in version control (Git/GitHub)</li>
+                        <li>
+                            <i class="material-icons">group</i>
+                            <h5>Collaboration and Teamwork</h5>
+                            <p>
+                                Whether working as a teacher, in hospitality, or on group projects during my web development journey, I've developed strong collaboration skills. I'm comfortable working with diverse teams, contributing to shared goals, and communicating effectively, which is crucial for pair programming and agile software development.
+                            </p>
+                        </li>
+                        <li>
+                            <i class="material-icons">directions</i>
+                            <h5>Adaptability</h5>
+                            <p>
+                                I've had to adjust quickly to different teaching environments, varying roles, and fast-paced work situations. This adaptability will help me thrive in software engineering, where technologies and requirements can evolve rapidly.
+                            </p>
+                        </li>
+                        <li>
+                            <i class="material-icons">show_chart</i>
+                            <h5>Problem Solving and Critical Thinking</h5>
+                            <p>
+                                My range of experiences have given me opportunities to assess challenges and find creative solutions. In software engineering, I'll bring this skill to debugging, optimising code, and developing user-focused software solutions.
+                            </p>
+                        </li>
+                        <li>
+                            <i class="material-icons">find_in_page</i>
+                            <h5>Attention to Detail</h5>
+                            <p>
+                                Through diverse experiences, I've demonstrated strong organisational skills and attention to detail. In software engineering, this helps me write clean, efficient code, maintain version control, and manage project timelines.
+                            </p>
+                        </li>
+                        <li>
+                            <i class="material-icons">trending_up</i>
+                            <h5>Responsive to Feedback and Continuous Improvement</h5>
+                            <p>
+                                I am always open to feedback and actively use feedback to improve my performance and skills. In software engineering, I look forward to refining my code, problem-solving methods, and overall project quality by continuously learning and adapting.
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </li>
             
-            <!-- Achievements Section -->
+            <!-- Hobbies and interests Section -->
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">emoji_events</i>Achievements
+                    <div class="header-left">
+                        <i class="material-icons">emoji_events</i>
+                        <h4 class="header-title">Hobbies & Interests</h4>
+                    </div>
+                    <i class="material-icons chevron">expand_more</i>
                 </div>
                 <div class="collapsible-body">
-                    <ul>
-                        <li>Won Best Project Award at Tech Hackathon 2022</li>
-                        <li>Published a paper in a peer-reviewed journal on web accessibility</li>
+                    <ul class="hobbies-icons">
+                        <li>
+                            <i class="fa-solid fa-paw" onclick="openModal('petsModal')"></i>
+                        </li>
+                        <li><i class="fa-solid fa-dumbbell" onclick="openModal('fitnessModal')"></i></li>
+                        <li><i class="fa-solid fa-utensils" onclick="openModal('foodModal')"></i></li>
+                        <li><i class="fa-solid fa-film" onclick="openModal('entertainmentModal')"></i></li>
+                        <li><i class="fa-solid fa-futbol" onclick="openModal('footballModal')"></i></li>
                     </ul>
                 </div>
             </li>
@@ -425,11 +482,53 @@
             <h4>Bar Supervisor</h4>
             <p>
                 Managed daytime food service and nighttime bar/club operations, ensuring exceptional customer and hospitality service. Oversaw staff, maintained a welcoming atmosphere, and handled cash transactions accurately. Demonstrated strong organizational skills, adaptability, and a commitment to delivering a high-quality guest experience.
-
             </p>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!--hobbies and interests modals-->
+    <!-- Pets Modal -->
+    <div id="petsModal" class="modal">
+        <div class="modal-content">
+            <h2>My Pets</h2>
+            <img src="/assets/images/pets-image.jpg" alt="My rabbits, Pancake and Pretzel" class="modal-image">
+            <p>Meet Pancake and Pretzel, my two adorable resuce rabbits! They love hopping around the house, munching on hay, and snuggling up for naps. I could sit and watch these two just rabbit around all day!</p>
+            <span class="close" onclick="closeModal('petsModal')">&times;</span>
+        </div>
+    </div>
+    <!-- Fitness Modal -->
+    <div id="fitnessModal" class="modal">
+        <div class="modal-content">
+            <h2>Health and Fitness</h2>
+            <p>I'm super lucky that I live near the canal and have numerous routes for mental health walks and a good jog. I'm building my self up to a 5k park run (slowly but surely- a ain't no Mo Farrah!) but I'm getting there. Luckily the various water-fowl on my routes aren't too judgy!</p>
+            <span class="close" onclick="closeModal('fitnessModal')">&times;</span>
+        </div>
+    </div>
+    <!-- Food Modal -->
+    <div id="foodModal" class="modal">
+        <div class="modal-content">
+            <h2>Food Glorious Food!</h2>
+            <p>I love food, cooking and eating out at restaurants. I LOVE trying new things and new cuisines. Currently obsessed with cooking tofu at home and my dinky new rice cooker!</p>
+            <span class="close" onclick="closeModal('foodModal')">&times;</span>
+        </div>
+    </div>
+    <!-- Entertainment Modal -->
+    <div id="entertainmentModal" class="modal">
+        <div class="modal-content">
+            <h2>Entertainment!</h2>
+            <p>I enjoy film, TV, podcsts and live music and comedy. I LOVE 'The Traitors' and really enjoy quirky dramas with a bit of comedy thrown in (Think 'Life on Mars' or 'Killing Eve') I recently saw Frank Turner and Garbage live and have seen many comedians live (Bill Bailey remains my favourite though).</p>
+            <span class="close" onclick="closeModal('entertainmentModal')">&times;</span>
+        </div>
+    </div>
+    <!-- Football Modal -->
+    <div id="footballModal" class="modal">
+        <div class="modal-content">
+            <h2>Women's Super League</h2>
+            <p>I'm a big fan of the W.S.L and support Manchester City Women's team, attending many home matches in bothe the domestic and champions's league.</p>
+            <span class="close" onclick="closeModal('footballModal')">&times;</span>
         </div>
     </div>
 
@@ -447,6 +546,39 @@
           var elems = document.querySelectorAll('.modal');
           var instances = M.Modal.init(elems);
         });
+        document.querySelectorAll('.collapsible-header').forEach((header) => {
+            header.addEventListener('click', () => {
+                const chevron = header.querySelector('.chevron');
+                chevron.textContent = chevron.textContent === 'expand_more' ? 'expand_less' : 'expand_more';
+                // expand_more = down arrow, expand_less = up arrow
+            });
+            });
+
+        // Open Modal
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+        }
+
+        // Close Modal
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+        }
+
+        // Close Modal When Clicking Outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        
+
+
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
