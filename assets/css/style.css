@@ -350,6 +350,160 @@ main p {
   z-index: 10;
 }
 
+/* Collapsible element */
+.collapsible-body {
+  font-size: 16px; /* Set a base font size for better readability */
+  line-height: 1.6; /* Improve line spacing for clarity */
+  color: var(--black-color); /* Ensure text color is readable */
+  padding: 15px; /* Add padding to space out the content */
+}
+
+.collapsible-body p {
+  margin-bottom: 15px; /* Add spacing between paragraphs for better flow */
+  color: var(--black-color); /* Ensure text color for paragraphs is distinct */
+}
+.collapsible-header .header-section p {
+  color: var(--black-color); /* Use black for better contrast against the white background */
+}
+
+.collapsible-header h4.text-black {
+  color: var(--black-color); /* Explicitly set black text for headings */
+  text-align: right; /* Align text to the right */
+  margin: 0; /* Remove default margins */
+  flex-grow: 1; /* Ensure proper alignment */
+}
+
+
+.nested-collapsible {
+  margin-left: 15px; /* Indent for better visual distinction */
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 10px; /* Space between columns */
+  margin: 20px 0; /* Add some spacing around the section */
+  color: black;
+}
+
+.header-left {
+  text-align: left; /* Align text to the left */
+}
+
+.header-right {
+  text-align: right; /* Align text to the right */
+}
+
+.header-section p {
+  margin: 5px 0; 
+}
+
+/* Styling for the experience table */
+.experience-table {
+  width: 100%;
+  border-collapse: collapse; /* Make the table borders collapse into a single border */
+  margin-top: 15px;
+}
+
+.experience-table th,
+.experience-table td {
+  padding: 12px 15px; /* Add padding to the table cells */
+  text-align: left; /* Align text to the left */
+  color: #fff; /* White text for both header and body cells */
+}
+
+.experience-table th {
+  background-color: #333; /* Dark background for header */
+  font-weight: bold; /* Bold header text */
+}
+
+.experience-table td {
+  background-color: #444; /* Dark background for table rows */
+  border-bottom: 1px solid #555; /* Darker grey border between rows */
+}
+
+.experience-table td.magnifier-cell {
+  text-align: center; /* Center align the magnifier icon */
+}
+
+/* Magnifier Icon */
+.experience-table .material-icons {
+  font-size: 36px; /* Increased size of the magnifier icon */
+  color: var(--highlights-color); /* Light color for the magnifier icon */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+}
+
+.experience-table tr:hover {
+  background-color: #555; /* Dark background on hover for rows */
+}
+
+.modal {
+  z-index: 1005; /* Materialize default */
+  position: fixed; /* Ensure it stays on top */
+}
+.modal-overlay {
+  z-index: 1004; /* Ensure overlay is behind the modal */
+}
+
+
+/* Make modal content scrollable */
+.modal-content {
+  max-height: 70vh; /* Limit the height of the modal */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Modal Content Styling */
+.modal-content {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Add some padding around the content */
+  max-height: 70vh; /* Limit the height of the modal */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* List Styling in Modal */
+.modal-content ul {
+  list-style-type: disc !important; /* Force bullet points */
+  padding-left: 20px; /* Add left padding to indent the list */
+  margin-bottom: 20px; /* Add space below the list */
+  color: var(--black-color); /* Ensure the list items have proper color */
+  font-size: 16px; /* Set font size for consistency */
+}
+
+/* List Item Styling */
+.modal-content ul li {
+  margin-bottom: 10px; /* Add space between list items */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+.modal-content ul li::before {
+  content: 'chevron_right'; /* Material Icon name */
+  font-family: 'Material Icons'; /* Specify Material Icons font */
+  font-size: 20px;
+  color: var(--highlights-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold; /* Optional: Retain bold styling if desired */
+}
+
+
+/* Paragraph Styling */
+.modal-content p {
+  font-size: 16px; /* Set a comfortable font size */
+  line-height: 1.5; /* Increase line height for readability */
+  margin-bottom: 15px; /* Add some space below paragraphs */
+}
+
+/* Headings Styling */
+.modal-content h5 {
+  font-size: 22px; /* Adjust the font size of the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
 /* Footer */
 .page-footer {
   background-color: var(--main-color);
