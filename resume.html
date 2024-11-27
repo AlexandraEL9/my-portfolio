@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--materialize-->
@@ -14,577 +14,540 @@
     <!--bespoke css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar and Side Navbar -->
     <!-- Navbar -->
     <nav class="black">
       <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">
-              <i class="fa-solid fa-laptop-code"></i>
-              <span>Alexandra Lee</span>
-          </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-              <i class="fas fa-bars"></i>
-              <span class="sr-only">Open mobile navigation</span>
-          </a>
-          <ul class="right hide-on-med-and-down">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/projects.html">Projects</a></li>
-              <li><a href="/resume.html">Resume</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-          </ul>
+        <a href="#!" class="brand-logo">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Alexandra Lee</span>
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="fas fa-bars"></i>
+          <span class="sr-only">Open mobile navigation</span>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="/resume.html">Resume</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-  </nav>
-  <!-- Side Navbar -->
-  <ul class="sidenav" id="mobile-demo">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/resume.html">Resume</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-  </ul>
+    </nav>
+    <!-- Side Navbar -->
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/resume.html">Resume</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+    </ul>
     <!--header-->
     <header>
-        <h1><i class="fa-regular fa-file"></i> Resume <i class="fa-regular fa-file"></i></h1>
-        <h2>Skills, Education and Experience</h2>
-        <h3>Download CV| <a href="/assets/documents/alexandra_lee_cv.docx.pdf" download class="download-btn">
-            <i class="fa-solid fa-file-pdf"></i>
-        </a></h3>
+      <h1>
+        <i class="fa-regular fa-file"></i> Resume <i class="fa-regular fa-file"></i>
+      </h1>
+      <h2>Skills, Education and Experience</h2>
+      <h3>Download CV| <a href="/assets/documents/alexandra_lee_cv.docx.pdf" download class="download-btn">
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      </h3>
     </header>
-
     <!--main container-->
     <main>
-        <ul class="collapsible">
-            <li>
-                <div class="collapsible-header">
-                    <div class="header-left">
-                      <i class="material-icons header-icon">insert_emoticon</i>
-                      <h4 class="header-title">Summary</h4>
-                    </div>
-                    <i class="material-icons chevron">expand_more</i> <!-- Down arrow by default -->
-                </div>
-                  
-                <div class="collapsible-body">
-                    <p>
-                        Experienced Primary Teacher, eager to leverage teaching experience and transferable skills—critical thinking, attention to detail, adaptability, and commitment to improvement—to excel in a software engineering role. Skilled in team collaboration, problem-solving, and effective communication to achieve optimal outcomes and foster inclusive learning environments. Experienced in strategic planning, mentoring, and innovation as a Subject Leader, driving continuous improvement. Adept at adapting to dynamic situations, building strong relationships, and fostering a collaborative team culture.
-                    </p>
-                </div>
-            </li>
-            <!-- Experience Section -->
-            <li>
-                <div class="collapsible-header">
-                    <div class="header-left">
-                        <i class="material-icons header-icon">work</i>
-                        <h4 class="header-title">Experience</h4>
-                    </div>
-                    <i class="material-icons chevron">expand_more</i> <!-- Down arrow by default -->
-                </div>
-                <div class="collapsible-body">
-            
-                    <!-- Experience Table -->
-                    <table class="experience-table">
-                        <thead>
-                        <tr>
-                            <th>Position</th>
-                            <th>Company</th>
-                            <th>Dates</th>
-                            <th>Location</th>
-                            <th>Details</th> <!-- Column for magnifier icon -->
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><strong>Career Break/ Self Funded Education</strong></td>
-                            <td>East Kent College/ Code Institute</td>
-                            <td>08/2023 to Current</td>
-                            <td>Manchester/ Remote</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal1" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Primary Class Teacher and Subject Leader</strong></td>
-                            <td>Resurrection Primary School</td>
-                            <td>09/2019 to 08/2023</td>
-                            <td>Manchester</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal2" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Supply Teacher</strong></td>
-                            <td>Randstad</td>
-                            <td>09/2015 to 08/2019</td>
-                            <td>Manchester</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal3" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Class Teacher</strong></td>
-                            <td>Clifton Primary School</td>
-                            <td>09/2014 to 08/2015</td>
-                            <td>Manchester</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal4" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Supply Teacher</strong></td>
-                            <td>Teaching Personnel</td>
-                            <td>09/2012 to 08/2014</td>
-                            <td>Manchester</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal5" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Newly Qualified Teacher</strong></td>
-                            <td>Peel Hall Community School</td>
-                            <td>09/2011 to 08/2012</td>
-                            <td>Salford</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal6" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Trainee Teacher</strong></td>
-                            <td>Yew Tree Community School</td>
-                            <td>09/2010 to 08/2011</td>
-                            <td>Oldham</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal7" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Primary Teaching Assisstant</strong></td>
-                            <td>Yew Tree Community School</td>
-                            <td>09/2009 to 08/2010</td>
-                            <td>Oldham</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal8" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Bar Supervisor</strong></td>
-                            <td>Revolution Bars / Inventive Leisure</td>
-                            <td>07/2006 to 08/2009</td>
-                            <td>Oldham</td>
-                            <td class="magnifier-cell">
-                            <!-- Trigger for Modal -->
-                            <a href="#modal9" class="modal-trigger">
-                                <i class="material-icons">search</i>
-                            </a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-   
-            <!-- Education Section -->
-            <li>
-                <div class="collapsible-header">
-                    <div class="header-left">
-                        <i class="material-icons">school</i>
-                        <h4 class="header-title">Education</h4>
-                    </div>
-                    <i class="material-icons chevron">expand_more</i> 
-                </div>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><strong>Level 5 Diploma in Web Application Development </strong>, East Kent College/ Code Institute (2024–Ongoing)</li>
-                        <li><strong>Post Graduate Certificate in Teaching: Education/ Teaching </strong> Manchester Metropolitan University (2010-2011)</li>
-                        <li><strong>Bachelor of Arts: Humanities: English with Cultural Studies </strong> Manchester Metropolitan University (2003-2006)</li>
-                    </ul>
-                </div>
-            </li>
-            
-            <!-- Skills Section -->
-            <li>
-                <div class="collapsible-header">
-                    <div class="header-left">
-                        <i class="material-icons">build</i>
-                        <h4 class="header-title">Skills</h4>
-                    </div>
-                    <i class="material-icons chevron">expand_more</i>
-                </div>
-                <div class="collapsible-body">
-                    <ul>
-                        <li>
-                            <i class="material-icons">group</i>
-                            <h5>Collaboration and Teamwork</h5>
-                            <p>
-                                Whether working as a teacher, in hospitality, or on group projects during my web development journey, I've developed strong collaboration skills. I'm comfortable working with diverse teams, contributing to shared goals, and communicating effectively, which is crucial for pair programming and agile software development.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">directions</i>
-                            <h5>Adaptability</h5>
-                            <p>
-                                I've had to adjust quickly to different teaching environments, varying roles, and fast-paced work situations. This adaptability will help me thrive in software engineering, where technologies and requirements can evolve rapidly.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">show_chart</i>
-                            <h5>Problem Solving and Critical Thinking</h5>
-                            <p>
-                                My range of experiences have given me opportunities to assess challenges and find creative solutions. In software engineering, I'll bring this skill to debugging, optimising code, and developing user-focused software solutions.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">find_in_page</i>
-                            <h5>Attention to Detail</h5>
-                            <p>
-                                Through diverse experiences, I've demonstrated strong organisational skills and attention to detail. In software engineering, this helps me write clean, efficient code, maintain version control, and manage project timelines.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">trending_up</i>
-                            <h5>Responsive to Feedback and Continuous Improvement</h5>
-                            <p>
-                                I am always open to feedback and actively use feedback to improve my performance and skills. In software engineering, I look forward to refining my code, problem-solving methods, and overall project quality by continuously learning and adapting.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            
-            <!-- Hobbies and interests Section -->
-            <li>
-                <div class="collapsible-header">
-                    <div class="header-left">
-                        <i class="material-icons">emoji_events</i>
-                        <h4 class="header-title">Hobbies & Interests</h4>
-                    </div>
-                    <i class="material-icons chevron">expand_more</i>
-                </div>
-                <div class="collapsible-body">
-                    <ul class="hobbies-icons">
-                        <li>
-                            <i class="fa-solid fa-paw" onclick="openModal('petsModal')"></i>
-                        </li>
-                        <li><i class="fa-solid fa-dumbbell" onclick="openModal('fitnessModal')"></i></li>
-                        <li><i class="fa-solid fa-utensils" onclick="openModal('foodModal')"></i></li>
-                        <li><i class="fa-solid fa-film" onclick="openModal('entertainmentModal')"></i></li>
-                        <li><i class="fa-solid fa-futbol" onclick="openModal('footballModal')"></i></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <div class="header-left">
+              <i class="material-icons header-icon">insert_emoticon</i>
+              <h4 class="header-title">Summary</h4>
+            </div>
+            <i class="material-icons chevron">expand_more</i>
+            <!-- Down arrow by default -->
+          </div>
+          <div class="collapsible-body">
+            <p> Experienced Primary Teacher, eager to leverage teaching experience and transferable skills—critical thinking, attention to detail, adaptability, and commitment to improvement—to excel in a software engineering role. Skilled in team collaboration, problem-solving, and effective communication to achieve optimal outcomes and foster inclusive learning environments. Experienced in strategic planning, mentoring, and innovation as a Subject Leader, driving continuous improvement. Adept at adapting to dynamic situations, building strong relationships, and fostering a collaborative team culture. </p>
+          </div>
+        </li>
+        <!-- Experience Section -->
+        <li>
+          <div class="collapsible-header">
+            <div class="header-left">
+              <i class="material-icons header-icon">work</i>
+              <h4 class="header-title">Experience</h4>
+            </div>
+            <i class="material-icons chevron">expand_more</i>
+            <!-- Down arrow by default -->
+          </div>
+          <div class="collapsible-body">
+            <!-- Experience Table -->
+            <table class="experience-table">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Company</th>
+                  <th>Dates</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                  <!-- Column for magnifier icon -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Career Break/ Self Funded Education</strong>
+                  </td>
+                  <td>East Kent College/ Code Institute</td>
+                  <td>08/2023 to Current</td>
+                  <td>Manchester/ Remote</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal1" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Primary Class Teacher and Subject Leader</strong>
+                  </td>
+                  <td>Resurrection Primary School</td>
+                  <td>09/2019 to 08/2023</td>
+                  <td>Manchester</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal2" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Supply Teacher</strong>
+                  </td>
+                  <td>Randstad</td>
+                  <td>09/2015 to 08/2019</td>
+                  <td>Manchester</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal3" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Class Teacher</strong>
+                  </td>
+                  <td>Clifton Primary School</td>
+                  <td>09/2014 to 08/2015</td>
+                  <td>Manchester</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal4" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Supply Teacher</strong>
+                  </td>
+                  <td>Teaching Personnel</td>
+                  <td>09/2012 to 08/2014</td>
+                  <td>Manchester</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal5" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Newly Qualified Teacher</strong>
+                  </td>
+                  <td>Peel Hall Community School</td>
+                  <td>09/2011 to 08/2012</td>
+                  <td>Salford</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal6" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Trainee Teacher</strong>
+                  </td>
+                  <td>Yew Tree Community School</td>
+                  <td>09/2010 to 08/2011</td>
+                  <td>Oldham</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal7" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Primary Teaching Assisstant</strong>
+                  </td>
+                  <td>Yew Tree Community School</td>
+                  <td>09/2009 to 08/2010</td>
+                  <td>Oldham</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal8" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Bar Supervisor</strong>
+                  </td>
+                  <td>Revolution Bars / Inventive Leisure</td>
+                  <td>07/2006 to 08/2009</td>
+                  <td>Oldham</td>
+                  <td class="magnifier-cell">
+                    <!-- Trigger for Modal -->
+                    <a href="#modal9" class="modal-trigger">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Education Section -->
+        <li>
+          <div class="collapsible-header">
+            <div class="header-left">
+              <i class="material-icons">school</i>
+              <h4 class="header-title">Education</h4>
+            </div>
+            <i class="material-icons chevron">expand_more</i>
+          </div>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <strong>Level 5 Diploma in Web Application Development </strong>, East Kent College/ Code Institute (2024–Ongoing)
+              </li>
+              <li>
+                <strong>Post Graduate Certificate in Teaching: Education/ Teaching </strong> Manchester Metropolitan University (2010-2011)
+              </li>
+              <li>
+                <strong>Bachelor of Arts: Humanities: English with Cultural Studies </strong> Manchester Metropolitan University (2003-2006)
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Skills Section -->
+        <li>
+          <div class="collapsible-header">
+            <div class="header-left">
+              <i class="material-icons">build</i>
+              <h4 class="header-title">Skills</h4>
+            </div>
+            <i class="material-icons chevron">expand_more</i>
+          </div>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <i class="material-icons">group</i>
+                <h5>Collaboration and Teamwork</h5>
+                <p> Whether working as a teacher, in hospitality, or on group projects during my web development journey, I've developed strong collaboration skills. I'm comfortable working with diverse teams, contributing to shared goals, and communicating effectively, which is crucial for pair programming and agile software development. </p>
+              </li>
+              <li>
+                <i class="material-icons">directions</i>
+                <h5>Adaptability</h5>
+                <p> I've had to adjust quickly to different teaching environments, varying roles, and fast-paced work situations. This adaptability will help me thrive in software engineering, where technologies and requirements can evolve rapidly. </p>
+              </li>
+              <li>
+                <i class="material-icons">show_chart</i>
+                <h5>Problem Solving and Critical Thinking</h5>
+                <p> My range of experiences have given me opportunities to assess challenges and find creative solutions. In software engineering, I'll bring this skill to debugging, optimising code, and developing user-focused software solutions. </p>
+              </li>
+              <li>
+                <i class="material-icons">find_in_page</i>
+                <h5>Attention to Detail</h5>
+                <p> Through diverse experiences, I've demonstrated strong organisational skills and attention to detail. In software engineering, this helps me write clean, efficient code, maintain version control, and manage project timelines. </p>
+              </li>
+              <li>
+                <i class="material-icons">trending_up</i>
+                <h5>Responsive to Feedback and Continuous Improvement</h5>
+                <p> I am always open to feedback and actively use feedback to improve my performance and skills. In software engineering, I look forward to refining my code, problem-solving methods, and overall project quality by continuously learning and adapting. </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Hobbies and interests Section -->
+        <li>
+          <div class="collapsible-header">
+            <div class="header-left">
+              <i class="material-icons">emoji_events</i>
+              <h4 class="header-title">Hobbies & Interests</h4>
+            </div>
+            <i class="material-icons chevron">expand_more</i>
+          </div>
+          <div class="collapsible-body">
+            <ul class="hobbies-icons">
+              <li>
+                <i class="fa-solid fa-paw" onclick="openModal('petsModal')"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-dumbbell" onclick="openModal('fitnessModal')"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-utensils" onclick="openModal('foodModal')"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-film" onclick="openModal('entertainmentModal')"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-futbol" onclick="openModal('footballModal')"></i>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </main>
-
     <!-- Modals -->
     <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Career Break / Self-Funded Education</h4>
-            <p>
-                During this time, I focused on self-directed learning and personal development, diving deep into web development technologies and gained comprehensive knowledge and hands-on experience in building web applications using modern technologies and best practices. Key areas of focus included:
-            </p>
-            <ul>
-                <li>
-                    <span class="underline">Front-End Development:</span> Created responsive and accessible user interfaces using HTML, CSS, and JavaScript. Learned how to enhance user experience through interactivity and design principles.
-                </li>
-                <li>
-                    <span class="underline">Back-End Development:</span> Developed server-side applications with Python and the Django framework, integrating with PostgreSQL databases to manage and query data efficiently.
-                </li>
-                <li>
-                    <span class="underline">Full-Stack Projects:</span> Designed and implemented full-stack applications, incorporating front-end and back-end technologies to deliver complete, functional solutions.
-                </li>
-                <li>
-                    <span class="underline">Collaboration Tools:</span> Worked with Git, GitHub, and tools like Slack to collaborate effectively on group projects, including a JavaScript app built with CodeSandbox.
-                </li>
-                <li>
-                    <span class="underline">Software Development Practices:</span> Focused on clean coding principles, debugging techniques, and version control to ensure high-quality software development.
-                </li>
-            </ul>
-            <p>
-                Through these projects, I not only strengthened my technical expertise but also honed my problem-solving skills. Learning supplemented by courses and bootcamps with SheCodes and CodeFirst Girls.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Career Break / Self-Funded Education</h4>
+        <p> During this time, I focused on self-directed learning and personal development, diving deep into web development technologies and gained comprehensive knowledge and hands-on experience in building web applications using modern technologies and best practices. Key areas of focus included: </p>
+        <ul>
+          <li>
+            <span class="underline">Front-End Development:</span> Created responsive and accessible user interfaces using HTML, CSS, and JavaScript. Learned how to enhance user experience through interactivity and design principles.
+          </li>
+          <li>
+            <span class="underline">Back-End Development:</span> Developed server-side applications with Python and the Django framework, integrating with PostgreSQL databases to manage and query data efficiently.
+          </li>
+          <li>
+            <span class="underline">Full-Stack Projects:</span> Designed and implemented full-stack applications, incorporating front-end and back-end technologies to deliver complete, functional solutions.
+          </li>
+          <li>
+            <span class="underline">Collaboration Tools:</span> Worked with Git, GitHub, and tools like Slack to collaborate effectively on group projects, including a JavaScript app built with CodeSandbox.
+          </li>
+          <li>
+            <span class="underline">Software Development Practices:</span> Focused on clean coding principles, debugging techniques, and version control to ensure high-quality software development.
+          </li>
+        </ul>
+        <p> Through these projects, I not only strengthened my technical expertise but also honed my problem-solving skills. Learning supplemented by courses and bootcamps with SheCodes and CodeFirst Girls. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal2" class="modal">
-        <div class="modal-content">
-            <h4>Primary Class Teacher and Subject Leader</h4>
-            <p>
-                My time in this role gave me the opportunity to develop my role to have more of a whole school impact. This was also a challenging time due to the Covid 19 Pandemic, requiring great amounts of flexibility, resilliance and innovation to deal with that time's particular challenges.
-            </p>
-            <h5>Class Teacher</h5>
-            <ul>
-                <li>
-                    <span class="underline">Team Collaboration:</span> Collaborated with colleagues to design, implement, and assess solutions that address diverse needs, delivering optimal outcomes for stakeholders.
-                </li>
-                <li>
-                    <span class="underline">Problem-Solving:</span>  Identified challenges and adapted strategies to overcome obstacles, managing competing priorities and tight deadlines effectively.
-                </li>
-                <li>
-                    <span class="underline">Effective Communication:</span> Delivered clear, concise explanations of complex information to diverse audiences, ensuring full understanding.
-                </li>
-                <li>
-                    <span class="underline">Stakeholder Management:</span> Built and maintained strong relationships with a wide range of stakeholders, aligning goals to achieve shared objectives.
-                </li>
-            </ul>
-            <h5>Subject Leader</h5>
-            <ul>
-                <li>
-                    <span class="underline">Leadership and Initiative:</span> Led projects by identifying improvement opportunities and driving initiatives that resulted in measurable outcomes.
-                </li>
-                <li>
-                    <span class="underline">Strategic Planning:</span> Developed and executed long-term plans to enhance quality and efficiency, continuously reviewing performance and driving iterative improvements.
-                </li>
-                <li>
-                    <span class="underline">Mentoring and Knowledge Sharing:</span> Provided guidance and training to team members, fostering a culture of growth and continuous learning.
-                </li>
-                <li>
-                    <span class="underline">Innovation:</span> Introduced new tools and methods to optimize workflows and outcomes, ensuring alignment with industry best practices.
-                </li>
-            </ul>
-            <h5>Trainee Teacher Mentor</h5>
-            <ul>
-                <li>
-                    <span class="underline">Coaching and Development:</span> Delivered tailored support to mentees, assessing strengths and areas for growth to drive professional development.
-                </li>
-                <li>
-                    <span class="underline">Empathy and Active Listening:</span> Built strong rapport and trust by understanding individual challenges and aspirations, fostering an inclusive, supportive environment.
-                </li>
-                <li>
-                    <span class="underline">Process Improvement:</span> Identified recurring challenges and implemented scalable solutions to optimize processes and enhance effectiveness. 
-                </li>
-                <li>
-                    <span class="underline">Performance Review:</span> Conducted regular progress reviews, providing constructive feedback and actionable steps to ensure consistent growth and goal attainment.
-                </li>
-            </ul>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Primary Class Teacher and Subject Leader</h4>
+        <p> My time in this role gave me the opportunity to develop my role to have more of a whole school impact. This was also a challenging time due to the Covid 19 Pandemic, requiring great amounts of flexibility, resilliance and innovation to deal with that time's particular challenges. </p>
+        <h5>Class Teacher</h5>
+        <ul>
+          <li>
+            <span class="underline">Team Collaboration:</span> Collaborated with colleagues to design, implement, and assess solutions that address diverse needs, delivering optimal outcomes for stakeholders.
+          </li>
+          <li>
+            <span class="underline">Problem-Solving:</span> Identified challenges and adapted strategies to overcome obstacles, managing competing priorities and tight deadlines effectively.
+          </li>
+          <li>
+            <span class="underline">Effective Communication:</span> Delivered clear, concise explanations of complex information to diverse audiences, ensuring full understanding.
+          </li>
+          <li>
+            <span class="underline">Stakeholder Management:</span> Built and maintained strong relationships with a wide range of stakeholders, aligning goals to achieve shared objectives.
+          </li>
+        </ul>
+        <h5>Subject Leader</h5>
+        <ul>
+          <li>
+            <span class="underline">Leadership and Initiative:</span> Led projects by identifying improvement opportunities and driving initiatives that resulted in measurable outcomes.
+          </li>
+          <li>
+            <span class="underline">Strategic Planning:</span> Developed and executed long-term plans to enhance quality and efficiency, continuously reviewing performance and driving iterative improvements.
+          </li>
+          <li>
+            <span class="underline">Mentoring and Knowledge Sharing:</span> Provided guidance and training to team members, fostering a culture of growth and continuous learning.
+          </li>
+          <li>
+            <span class="underline">Innovation:</span> Introduced new tools and methods to optimize workflows and outcomes, ensuring alignment with industry best practices.
+          </li>
+        </ul>
+        <h5>Trainee Teacher Mentor</h5>
+        <ul>
+          <li>
+            <span class="underline">Coaching and Development:</span> Delivered tailored support to mentees, assessing strengths and areas for growth to drive professional development.
+          </li>
+          <li>
+            <span class="underline">Empathy and Active Listening:</span> Built strong rapport and trust by understanding individual challenges and aspirations, fostering an inclusive, supportive environment.
+          </li>
+          <li>
+            <span class="underline">Process Improvement:</span> Identified recurring challenges and implemented scalable solutions to optimize processes and enhance effectiveness.
+          </li>
+          <li>
+            <span class="underline">Performance Review:</span> Conducted regular progress reviews, providing constructive feedback and actionable steps to ensure consistent growth and goal attainment.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal3" class="modal">
-        <div class="modal-content">
-            <h4>Supply Teacher</h4>
-            <p>
-                As I supply teacher I was involved in a number of different roles including short term, day-to-day assignments to long term assignments covering periodl like maternity leave or long term staff absence.
-            </p>
-            <ul>
-                <li>
-                    <span class="underline">Adaptability:</span> Thrived in dynamic environments by swiftly assessing challenges and implementing solutions to meet immediate needs.
-                </li>
-                <li>
-                    <span class="underline">Rapid Problem-Solving:</span> Quickly adjusted to varying workflows, tools, and requirements, maintaining focus and productivity under changing circumstances.
-                </li>
-                <li>
-                    <span class="underline">Collaboration and Trust-Building: </span> Built strong relationships with stakeholders through professionalism, reliability, and a solutions-oriented approach.
-                </li>
-                <li>
-                    <span class="underline"> Fostered open communication to align objectives, build consensus, and ensure seamless teamwork across teams.
-                </li>
-                <li>
-                    <span class="underline">Empathy and Influence:</span> Developed an understanding of team dynamics to create a positive and productive work environment.
-                </li>
-                <li></li>
-                    <span class="underline">Framework Agility:</span> Successfully navigated diverse methodologies, showcasing flexibility and a willingness to adapt to new systems and tools.
-                </li>
-            </ul>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Supply Teacher</h4>
+        <p> As I supply teacher I was involved in a number of different roles including short term, day-to-day assignments to long term assignments covering periodl like maternity leave or long term staff absence. </p>
+        <ul>
+          <li>
+            <span class="underline">Adaptability:</span> Thrived in dynamic environments by swiftly assessing challenges and implementing solutions to meet immediate needs.
+          </li>
+          <li>
+            <span class="underline">Rapid Problem-Solving:</span> Quickly adjusted to varying workflows, tools, and requirements, maintaining focus and productivity under changing circumstances.
+          </li>
+          <li>
+            <span class="underline">Collaboration and Trust-Building: </span> Built strong relationships with stakeholders through professionalism, reliability, and a solutions-oriented approach.
+          </li>
+          <li>
+            <span class="underline"> Fostered open communication to align objectives, build consensus, and ensure seamless teamwork across teams.
+          </li>
+          <li>
+            <span class="underline">Empathy and Influence:</span> Developed an understanding of team dynamics to create a positive and productive work environment.
+          </li>
+          <li></li>
+          <span class="underline">Framework Agility:</span> Successfully navigated diverse methodologies, showcasing flexibility and a willingness to adapt to new systems and tools. </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal4" class="modal">
-        <div class="modal-content">
-            <h4>Primary Class Teacher</h4>
-            <p>
-                Developed skills in team coordination, working effectively within large teams to ensure alignment on shared goals and contributing to successful delivery. Through collaborative problem-solving, I actively engage with colleagues to identify challenges and develop solutions. I was committed to knowledge sharing, supporting team members by providing resources, strategies, and best practices, fostering a collaborative and supportive team culture.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Primary Class Teacher</h4>
+        <p> Developed skills in team coordination, working effectively within large teams to ensure alignment on shared goals and contributing to successful delivery. Through collaborative problem-solving, I actively engage with colleagues to identify challenges and develop solutions. I was committed to knowledge sharing, supporting team members by providing resources, strategies, and best practices, fostering a collaborative and supportive team culture. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal5" class="modal">
-        <div class="modal-content">
-            <h4>Primary Supply Teacher</h4>
-            <p>
-                Adapted quickly to new environments, delivering high-quality lessons across various subjects and year groups. Built strong rapport with students and staff, maintaining consistency and engagement. Navigated differing processes and frameworks in each setting, demonstrating flexibility, professionalism, and effective time management.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Primary Supply Teacher</h4>
+        <p> Adapted quickly to new environments, delivering high-quality lessons across various subjects and year groups. Built strong rapport with students and staff, maintaining consistency and engagement. Navigated differing processes and frameworks in each setting, demonstrating flexibility, professionalism, and effective time management. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal6" class="modal">
-        <div class="modal-content">
-            <h4>Newly Qualified Teacher</h4>
-            <p>
-                Planned and delivered engaging sequences of lessons while managing classroom dynamics and fostering an inclusive learning environment. Actively sought and applied feedback from mentors to refine teaching strategies and improve performance. Demonstrated adaptability and a commitment to continuous professional growth in a fast-paced training environment.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Newly Qualified Teacher</h4>
+        <p> Planned and delivered engaging sequences of lessons while managing classroom dynamics and fostering an inclusive learning environment. Actively sought and applied feedback from mentors to refine teaching strategies and improve performance. Demonstrated adaptability and a commitment to continuous professional growth in a fast-paced training environment. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal7" class="modal">
-        <div class="modal-content">
-            <h4>Trainee Teacher</h4>
-            <p>
-                Planned and delivered engaging lessons. Actively sought and applied feedback from mentors to refine teaching strategies and improve performance. 
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Trainee Teacher</h4>
+        <p> Planned and delivered engaging lessons. Actively sought and applied feedback from mentors to refine teaching strategies and improve performance. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal8" class="modal">
-        <div class="modal-content">
-            <h4>Primary Teaching Assisstant</h4>
-            <p>
-                Supported classroom teaching by assisting with lesson delivery, providing one-to-one and small-group support, and fostering an inclusive learning environment. Helped students overcome challenges, reinforcing concepts and building confidence, while contributing to the smooth running of daily classroom activities
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Primary Teaching Assisstant</h4>
+        <p> Supported classroom teaching by assisting with lesson delivery, providing one-to-one and small-group support, and fostering an inclusive learning environment. Helped students overcome challenges, reinforcing concepts and building confidence, while contributing to the smooth running of daily classroom activities </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <div id="modal9" class="modal">
-        <div class="modal-content">
-            <h4>Bar Supervisor</h4>
-            <p>
-                Managed daytime food service and nighttime bar/club operations, ensuring exceptional customer and hospitality service. Oversaw staff, maintained a welcoming atmosphere, and handled cash transactions accurately. Demonstrated strong organizational skills, adaptability, and a commitment to delivering a high-quality guest experience.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close btn-flat">Close</a>
-        </div>
+      <div class="modal-content">
+        <h4>Bar Supervisor</h4>
+        <p> Managed daytime food service and nighttime bar/club operations, ensuring exceptional customer and hospitality service. Oversaw staff, maintained a welcoming atmosphere, and handled cash transactions accurately. Demonstrated strong organizational skills, adaptability, and a commitment to delivering a high-quality guest experience. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Close</a>
+      </div>
     </div>
-
     <!--hobbies and interests modals-->
     <!-- Pets Modal -->
     <div id="petsModal" class="modal">
-        <div class="modal-content">
-            <h2>My Pets</h2>
-            <img src="/assets/images/pets-image.jpg" alt="My rabbits, Pancake and Pretzel" class="modal-image">
-            <p>Meet Pancake and Pretzel, my two adorable resuce rabbits! They love hopping around the house, munching on hay, and snuggling up for naps. I could sit and watch these two just rabbit around all day!</p>
-            <span class="close" onclick="closeModal('petsModal')">&times;</span>
-        </div>
+      <div class="modal-content">
+        <h2>My Pets</h2>
+        <img src="/assets/images/pets-image.jpg" alt="My rabbits, Pancake and Pretzel" class="modal-image">
+        <p>Meet Pancake and Pretzel, my two adorable resuce rabbits! They love hopping around the house, munching on hay, and snuggling up for naps. I could sit and watch these two just rabbit around all day!</p>
+        <span class="close" onclick="closeModal('petsModal')">&times;</span>
+      </div>
     </div>
     <!-- Fitness Modal -->
     <div id="fitnessModal" class="modal">
-        <div class="modal-content">
-            <h2>Health and Fitness</h2>
-            <p>I'm super lucky that I live near the canal and have numerous routes for mental health walks and a good jog. I'm building my self up to a 5k park run (slowly but surely- a ain't no Mo Farrah!) but I'm getting there. Luckily the various water-fowl on my routes aren't too judgy!</p>
-            <span class="close" onclick="closeModal('fitnessModal')">&times;</span>
-        </div>
+      <div class="modal-content">
+        <h2>Health and Fitness</h2>
+        <p>I'm super lucky that I live near the canal and have numerous routes for mental health walks and a good jog. I'm building my self up to a 5k park run (slowly but surely- a ain't no Mo Farrah!) but I'm getting there. Luckily the various water-fowl on my routes aren't too judgy!</p>
+        <span class="close" onclick="closeModal('fitnessModal')">&times;</span>
+      </div>
     </div>
     <!-- Food Modal -->
     <div id="foodModal" class="modal">
-        <div class="modal-content">
-            <h2>Food Glorious Food!</h2>
-            <p>I love food, cooking and eating out at restaurants. I LOVE trying new things and new cuisines. Currently obsessed with cooking tofu at home and my dinky new rice cooker!</p>
-            <span class="close" onclick="closeModal('foodModal')">&times;</span>
-        </div>
+      <div class="modal-content">
+        <h2>Food Glorious Food!</h2>
+        <p>I love food, cooking and eating out at restaurants. I LOVE trying new things and new cuisines. Currently obsessed with cooking tofu at home and my dinky new rice cooker!</p>
+        <span class="close" onclick="closeModal('foodModal')">&times;</span>
+      </div>
     </div>
     <!-- Entertainment Modal -->
     <div id="entertainmentModal" class="modal">
-        <div class="modal-content">
-            <h2>Entertainment!</h2>
-            <p>I enjoy film, TV, podcsts and live music and comedy. I LOVE 'The Traitors' and really enjoy quirky dramas with a bit of comedy thrown in (Think 'Life on Mars' or 'Killing Eve') I recently saw Frank Turner and Garbage live and have seen many comedians live (Bill Bailey remains my favourite though).</p>
-            <span class="close" onclick="closeModal('entertainmentModal')">&times;</span>
-        </div>
+      <div class="modal-content">
+        <h2>Entertainment!</h2>
+        <p>I enjoy film, TV, podcsts and live music and comedy. I LOVE 'The Traitors' and really enjoy quirky dramas with a bit of comedy thrown in (Think 'Life on Mars' or 'Killing Eve') I recently saw Frank Turner and Garbage live and have seen many comedians live (Bill Bailey remains my favourite though).</p>
+        <span class="close" onclick="closeModal('entertainmentModal')">&times;</span>
+      </div>
     </div>
     <!-- Football Modal -->
     <div id="footballModal" class="modal">
-        <div class="modal-content">
-            <h2>Women's Super League</h2>
-            <p>I'm a big fan of the W.S.L and support Manchester City Women's team, attending many home matches in bothe the domestic and champions's league.</p>
-            <span class="close" onclick="closeModal('footballModal')">&times;</span>
-        </div>
+      <div class="modal-content">
+        <h2>Women's Super League</h2>
+        <p>I'm a big fan of the W.S.L and support Manchester City Women's team, attending many home matches in bothe the domestic and champions's league.</p>
+        <span class="close" onclick="closeModal('footballModal')">&times;</span>
+      </div>
     </div>
-
     <footer class="page-footer black">
-        <div class="container">
-          <div class="footer-copyright">
-            <div class="container"> © 2024 My Portfolio All rights reserved. For educational purposes only. </div>
-          </div>
+      <div class="container">
+        <div class="footer-copyright">
+          <div class="container"> © 2024 My Portfolio All rights reserved. For educational purposes only. </div>
         </div>
-    </footer> 
-
-    <!--javascript-->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var elems = document.querySelectorAll('.modal');
-          var instances = M.Modal.init(elems);
-        });
-        document.querySelectorAll('.collapsible-header').forEach((header) => {
-            header.addEventListener('click', () => {
-                const chevron = header.querySelector('.chevron');
-                chevron.textContent = chevron.textContent === 'expand_more' ? 'expand_less' : 'expand_more';
-                // expand_more = down arrow, expand_less = up arrow
-            });
-            });
-
-        // Open Modal
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'block';
-        }
-
-        // Close Modal
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'none';
-        }
-
-        // Close Modal When Clicking Outside
-        window.onclick = function(event) {
-            const modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        }
-
-        
-
-
-    </script>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--bespoke javaScript-->
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
